@@ -1,0 +1,46 @@
+PapoteCar : Dictionnaire de données
+======================================
+
+Utilisateur : Personne pouvant être Particulier et passager sur des trajets différents
+
+Conducteur :	Personne proposant un covoiturage
+
+Passager :	Personne inscrit sur le covoiturage X du Conducteur Y pour le trajet Z
+		Un passager ne peut être sur deux trajets différents au même moment
+		Un  passager  ne  peut  pas être conducteur et  passager  sur  un  même  trajet
+
+Covoiturage : 	Elle  permet  à  des  particuliers  de  proposer  des  places  dans  leur  voiture  lors  de 
+		leurs trajets.
+
+Voiture : 	Véhicule du Conducteur proposant le covoiturage
+		Nombre de place limité (à prendre en compte pour les différentes étapes du trajet)	
+
+Trajet :	Trajet du Conducteur 
+
+Système de messagerie : Permet à l'enssemble des utilisateurs d'une même voiture de discuter
+			avant et après le trajet
+
+
+======================================
+Méthode et Attribut
+======================================
+UTILISATEUR : CONDUCTEUR, PASSAGER
+Tableau de bord :	Permet de :
+				- Voir l'état des trajets en cours
+				- Voir les trajets réservés par un passager
+----------------------------------------------------------------------------
+CONDUCTEUR
+Ajouter : 		Ajouter un trajet
+Modifier :		Modifier un trajet proposé
+Supprimer :		Supprimer un trajet proposé
+Lister les proposition  Lister les  propositions  de  trajets  possibles  entre  deux  villes
+Valider :		Valider un passger sur un trajet
+----------------------------------------------------------------------------
+PASSAGER
+S'inscrire :		S'inscrire sur un trajet proposé
+Se désinscrire :	Se désinscrire sur un trajet proposé
+Lister les proposition  Lister les  propositions  de  trajets  possibles  entre  deux  villes
+----------------------------------------------------------------------------
+TRAJET
+Etape :			Un trajet peut avoir plusieurs étapes sur lesquelles 
+			un nouveau passager peut descendre ou monter	
